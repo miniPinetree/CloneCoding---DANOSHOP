@@ -2,12 +2,13 @@ import React from "react";
 import styled from "styled-components";
 
 const Image = (props)=>{
-    const { src, width, height } = props;
+    const { src, width, height, margin } = props;
 
     const styles ={
         src: src,
         width:width,
         height:height,
+        margin:margin,
     }
     return (
         <React.Fragment>
@@ -21,6 +22,7 @@ Image.defaultProps = {
     src: "https://danoshop.net/mall/upload/2020/12/15/hover_season4.png",
     height: "300px",
     width: "100%",
+    margin:"0",
     };
 
     const ImageDefault = styled.div`
@@ -31,6 +33,7 @@ Image.defaultProps = {
     background-size:cover;
     background-position:center;
     box-sizing:border-box;
+    margin:${(props)=>props.margin};
     `;
 
 export default Image;

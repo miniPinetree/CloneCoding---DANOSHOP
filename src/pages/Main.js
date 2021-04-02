@@ -1,26 +1,32 @@
 import React from "react";
 import {Grid} from "../elements";
+import styled from "styled-components";
 import Product from "../components/Product";
 import SliderBanner from "../components/SliderBanner";
 
 const Main =(props)=>{
     return(
         <React.Fragment>
+            <Align>
              <Grid margin="50px 0" center>헤더</Grid>
-           
-           
             <Grid>
             <SliderBanner/>
             </Grid>
-            <Grid is_flex height="260px" margin="10px">
+            <Grid is_flex width="90%">
             <Product/>
             <Product/>
             <Product/>
             <Product/>
             </Grid>
+            </Align>
         
         </React.Fragment>
     );
 }
+
+const Align = styled.div`
+justify-content:center;
+align-items:center;
+`;
 
 export default Main;

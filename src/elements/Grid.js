@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const Grid=(props)=>{
-    const { radius, is_flex, width, margin, padding, bg, children, center,_onClick } = props;
+    const { max_width, max_height, radius, is_flex, width, margin, padding, bg, children, center,_onClick } = props;
 
     const styles = {
         is_flex: is_flex,
@@ -12,6 +12,8 @@ const Grid=(props)=>{
         bg: bg,
         center:center,
         radius:radius,
+        max_width:max_width,
+        max_height:max_height,
     };
     return (
       <React.Fragment>
@@ -34,6 +36,8 @@ const Grid=(props)=>{
     width: ${(props) => props.width};
     height: ${(props) => props.width};
     box-sizing: border-box;
+    ${(props) => (props.max_width ? `max-width: ${props.max_width};` : "")}
+    ${(props) => (props.max_height ? `max-height: ${props.max_height};` : "")}
     ${(props) => (props.padding ? `padding: ${props.padding};` : "")}
     ${(props) => (props.margin ? `margin: ${props.margin};` : "")}
     ${(props) => (props.bg ? `background-color: ${props.bg};` : "")}

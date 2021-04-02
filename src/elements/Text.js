@@ -26,7 +26,7 @@ font-size:${(props)=>props.size};
 font-weight:${(props)=>(props.bold? "600":"400")};
 ${(props)=>props.margin? `margin:${props.margin}`:""}
 ${(props)=>props.center? `text-align:`:""};
-font-family: "Noto Sans KR", sans-serif;
+font-family: Dotum, 돋움, Helvetica, "Apple SD Gothic Neo", sans-serif;
 `;
 
 export default Text;

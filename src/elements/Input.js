@@ -4,7 +4,7 @@ import { Text, Grid } from "./index";
 import styled from "styled-components";
 
 const Input = (props) => {
-  const { placeholder, is_Submit,onSubmit, _onChange, type, multiline, value } = props;
+  const {width, height, placeholder, is_Submit,onSubmit, _onChange, type, multiline, value } = props;
 
   return (
     <React.Fragment>
@@ -38,8 +38,8 @@ const ElInput = styled.input`
   box-sizing: border-box;
   text-align:left;
   font-size:13px;
-  height:${props=>props.height&&props.height};
-  width:${props=>props.width&&props.width};
+  height:${props=>props.height};
+  width:${props=>props.width};
   font-family: Dotum, '\B3CB\C6C0', Helvetica, 'Apple SD Gothic Neo', sans-serif;
 `;
 export default Input;

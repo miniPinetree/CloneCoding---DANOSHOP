@@ -13,19 +13,21 @@ import img6 from "./images/img6.png";
 import img7 from "./images/img7.png";
 import img8 from "./images/img8.png";
 
-
-
-
 const SliderBanner = (props)=>{
     const settings = {
         dots: true,
+        arrows:true,
         infinite: true,
         speed: 500,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        pauseOnHover: true,
       };
     
     return(
+    
         <Grid margin="0 0 30px 0">
         <Slider {...settings}>
           <Grid width="100%">
@@ -54,6 +56,7 @@ const SliderBanner = (props)=>{
           </Grid>
         </Slider>
       </Grid>
+    
     );
 }
 export default SliderBanner;
