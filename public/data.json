@@ -1,3 +1,25 @@
 {
-    ""
-}
+    "ok": true,
+    "result": {
+     "prd_img":"https://danoshop.net/mall/upload/2020/03/11/dumpling_716x478.jpg",
+       "prd_name":"다노 닭가슴살 곤약만두 3종 (오리지널/청양고추/불닭) 10팩",
+      "prd_sum":"쫄깃한 만두피 속 닭가슴살, 곤약이 가득",
+      "promotionPer":0,
+      "originPrice":null,
+      "price":"26,900",
+      "promotion":false,
+      "new":false,
+  "free_ship":true,
+  "desc":[
+  "https://mxsorovxjmdc896281.cdn.ntruss.com/2020-03-11/1ee4383d0c78347b093b745747e593b72b2263e6,",
+  "https://danoshop.net/mall/upload/2020/03/11/02_dumpling_DN9g2u7.png",
+  "https://danoshop.net/mall/upload/2020/03/11/full_dumpling_nosale02.png",
+  ],
+  "detail_info":[
+  {"용량,수량":"다노 닭가슴살 곤약만두(168g) 10팩"},{"배송비 정책":"무료배송(CJ대한통운)"},{"유통기한":"곤약만두 오리지널 10팩: 2021-11-02 / 곤약만두 청양고추 10팩: 2021-09-17 / 곤약만두 오리지널5팩+청양고추5팩: 제품 별도 표기일까지 / 곤약만두 불닭 10팩: 2021-10-19 / 곤약만두 오리지널5팩+불닭5팩: 제품 별도 표기일까지 / 곤약만두 불닭5팩+청양고추5팩: 제품 별도 표기일까지 / 곤약만두 오리지날5팩+청양고추5팩+불닭5팩: 제품 별도 표기일까지"}
+  ],
+  
+      }
+    }
+  }
+  
