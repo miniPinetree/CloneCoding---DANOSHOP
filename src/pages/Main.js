@@ -12,7 +12,7 @@ const Main =(props)=>{
             <Grid>
             <SliderBanner/>
             </Grid>
-            <Grid is_flex width="90%">
+            <Grid is_flex width="80%" margin="0 auto" padding="0 40px">
             <Product/>
             <Product/>
             <Product/>
@@ -27,6 +27,7 @@ const Main =(props)=>{
 const Align = styled.div`
 justify-content:center;
 align-items:center;
+
 `;
 
 export default Main;

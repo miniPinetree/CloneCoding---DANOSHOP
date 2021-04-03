@@ -4,7 +4,7 @@ import {Text, Grid, Image} from "../elements";
 
 const Product =(props)=>{
     return(
-        <Grid height="260px"  margin="0 5px">
+        <Grid height="260px"  margin="0 3px">
             <Image width="275px" height="190px" margin="5px"/>  
             <Grid center>
             <Text bold size="14px" color="#4E4E4E">다노한끼 시즌4 곤약도시락</Text>
