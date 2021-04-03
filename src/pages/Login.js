@@ -23,9 +23,9 @@ const Login =(props)=>{
 }
 const Align = styled.div`
 text-align:center;
-/* width:460px;
+width:460px;
 height:565px;
-margin:0 auto; */
+margin:0 auto;
 `;
 
 const Line = styled.hr`
