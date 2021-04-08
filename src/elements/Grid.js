@@ -21,13 +21,15 @@ const Grid = (props) => {
     border_right,
     border_bottom,
     height,
+    wrap,
+    border,
   } = props;
 
   const styles = {
     is_flex: is_flex,
     width: width,
-
-    height:height,
+    wrap: wrap,
+    height: height,
     margin: margin,
     padding: padding,
     bg: bg,
@@ -41,6 +43,7 @@ const Grid = (props) => {
     border_left: border_left,
     border_right: border_right,
     border_bottom: border_bottom,
+    border: border,
   };
   return (
     <React.Fragment>
@@ -81,7 +84,8 @@ const GridBox = styled.div`
       : props.right
       ? `text-align: right;`
       : ""};
-
+  ${(props) => (props.wrap ? `flex-wrap:wrap;` : "")}
+  ${(props) => (props.border ? `border:${props.border}` : "")}
   ${(props) => (props.border_top ? `border-top:${props.border_top}` : "")}
   ${(props) => (props.border_left ? `border-left:${props.border_left}` : "")}
       ${(props) =>

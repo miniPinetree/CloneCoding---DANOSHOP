@@ -4,11 +4,14 @@ import axios from "axios";
 
 //action type
 const SET_POST = "SET_POST";
+const LOADING= "LOADING";
 
 const setPost = createAction(SET_POST, (post_list) => ({ post_list}));
+const loading = createAction(LOADING, (is_loading)=>({is_loading}));
 
 const initialState = {
     list: [],
+    is_loading: false,
   };
 
   const initialPost = {
@@ -79,16 +82,33 @@ const initialState = {
 
 const getPostDB = () =>{
     return function (dispatch, getState, {history}){
+
+        dispatch(loading(true));
+
         axios({
             method: "get",
             url:"http://13.125.249.241/api/items",
         }).then(res => {
             const post_list = res.data.result;
             dispatch(setPost(post_list));
-            console.log(post_list);
         })
     }
 }
+
+const getOnePostDB = (id) => {
+    return function (dispatch, getState, { history }) {
+
+        dispatch(loading(true));
+
+        axios({
+            method: "get",
+            url:`http://13.125.249.241/api/items/${id}`,
+        }).then(res => {
+            const post = res.data.result[0];
+            console.log(post);
+            dispatch(setPost([post]));
+        })
+    }};
 
 export default handleActions(
     {
@@ -98,7 +118,11 @@ export default handleActions(
           ) =>
             produce(state, (draft) => {
               draft.list.push(...action.payload.post_list);
-      
+              draft.is_loading = false;
+              }),
+              [LOADING]: (state, action) => 
+              produce(state, (draft) => {
+                draft.is_loading = action.payload.is_loading;
               })
     },  initialState
     );
@@ -108,6 +132,7 @@ export default handleActions(
 const actionCreators = {
     setPost,
     getPostDB,
+    getOnePostDB
 };
 
 export { actionCreators };

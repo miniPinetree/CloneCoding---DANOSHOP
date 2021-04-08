@@ -20,8 +20,8 @@ const Image = (props)=>{
 
 Image.defaultProps = {
     src: "https://danoshop.net/mall/upload/2020/12/15/hover_season4.png",
-    height: "300px",
     width: "100%",
+    height:"300px",
     margin:"0",
     };
 
