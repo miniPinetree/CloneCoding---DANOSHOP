@@ -25,12 +25,12 @@ const dispatch = useDispatch();
 const token = getCookie("is_login")
 
 React.useEffect(()=>{
-  if(token){
+  if(token){ //토큰이 존재하면 로그인을 유지 API 호출
     dispatch(userActions.loginCheckDB());
   }
 }, [])
 
-  return (
+  return ( //header, footer는 페이지 이동과 관계없이 보여짐.
     <React.Fragment>
       <Header/>
 <ConnectedRouter history={history}>

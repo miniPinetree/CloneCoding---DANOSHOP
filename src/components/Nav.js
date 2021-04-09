@@ -3,6 +3,8 @@ import styled from "styled-components";
 import {Grid} from "../elements";
 const Nav = (props) => {
 
+  //스타일 컴포넌트 이용 시 스타일 충돌로 적용 오류
+  //인라인 스타일을 주니 현상 해결
 const ulStyle={
     display: "inline-block",
     margin: "0",
