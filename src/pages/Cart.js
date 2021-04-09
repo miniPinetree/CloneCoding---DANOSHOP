@@ -4,7 +4,9 @@ import { history } from "../redux/configStore";
 import { Grid, Text, Image } from "../elements";
 
 const Cart = (props) => {
+  //로컬스토리지의 장바구니 정보 가공 가능한 데이터로 변환
   const cart_list = JSON.parse(localStorage.getItem("cart"));
+  //장바구니에 든 상품들의 합계 금액 계산
   var sum = cart_list.map((a) => a.sum).reduce((a, b) => a + b);
 
   
