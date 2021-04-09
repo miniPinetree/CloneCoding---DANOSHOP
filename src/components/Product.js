@@ -3,13 +3,14 @@ import styled from "styled-components";
 import { Text, Grid, Image, TextWrapper } from "../elements";
 import {history} from "../redux/configStore";
 
+//메인화면에서 상품 정보를 전달받아 제품 정보를 렌더링
 const Product = (props) => {
   const _price = props.price;
   const price = _price.slice(0, -1);
 
   return (
     <React.Fragment>
-      {props.idx < 4 ? (
+      {props.idx < 4 ? ( //메인화면 배너 하단 상품 4개는 다른 레이아웃으로 표시
         <Grid
           width="275px"
           height="260px"
@@ -42,7 +43,7 @@ const Product = (props) => {
             </Grid>
           </Grid>
         </Grid>
-      ) : (
+      ) : ( //그 외 제품은 아래 레이아웃으로 통일
         <Grid
           width="274px"
           height="465px"

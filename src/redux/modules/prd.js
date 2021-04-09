@@ -79,7 +79,7 @@ const initialState = {
 
 
   };
-//상품 리스트를 DB로부터 받아오는 API통신
+//상품 리스트 API
 const getPostDB = () =>{
     return function (dispatch, getState, {history}){
 
@@ -94,7 +94,7 @@ const getPostDB = () =>{
         })
     }
 }
-
+//상품 상세 페이지 API
 const getOnePostDB = (id) => {
     return function (dispatch, getState, { history }) {
 

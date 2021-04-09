@@ -7,7 +7,7 @@ import DetailNav from "../components/DetailNav";
 import swal from "sweetalert";
 import { history } from "../redux/configStore";
 
-//상품 디테일 페이지에서 옵션을 선택하여 장바구니에 담을 수 있습니다.
+//상품 디테일 페이지에서 옵션을 선택하여 장바구니에 담을 수 있음
 const Detail = (props) => {
   const id = props.match.params.id;
   const dispatch = useDispatch();
@@ -15,6 +15,8 @@ const Detail = (props) => {
   const prd_idx = prd_list.findIndex((p) => p.goodsId == id);
   const prd = prd_list[prd_idx];
 
+//새로고침 등으로 리덕스 데이터가 존재하지 않는 경우
+//DB에 해당 상품 정보 요청
   React.useEffect(() => {
     if (prd) {
       return;
@@ -24,6 +26,7 @@ const Detail = (props) => {
   const [options, setOption] = React.useState([]);
   const [sum, setSum] = React.useState(0);
 
+  //상품 옵션을 선택하면 화면에 elements 추가 렌더링
   const selectOption = (e) => {
     const _options = options.filter((o, idx) => {
       if (o !== e.target.value) {
@@ -37,6 +40,7 @@ const Detail = (props) => {
     ]);
     setSum(sum + price);
   };
+  //옵션 삭제
   const deleteOption = (target) => {
     const _options = options.filter((option, idx) => {
       if (option.text !== target.text) {
@@ -50,6 +54,7 @@ const Detail = (props) => {
     });
     setOption(_options);
   };
+  //선택한 옵션의 수량 변경 시 수량 및 가격 반영
   const plusQuantity = (option) => {
     let price = Number(option.text.slice(-7, -1).split(",").join("").trim());
     setSum(sum + price);
@@ -64,8 +69,7 @@ const Detail = (props) => {
       option.sum -= price;
     }
   };
-
-  //장바구니 담기 시 로컬 스토리지에 정보를 저장합니다.
+  //장바구니 담기 시 로컬 스토리지에 정보를 저장
   const setLocalStorage = () => {
     const _cart = localStorage.getItem("cart");
     if (_cart) {
@@ -74,7 +78,7 @@ const Detail = (props) => {
     } else {
       localStorage.setItem("cart", JSON.stringify(options));
     }
-    //저장 여부를 알리고 페이지 이동 의사를 묻는 알림을 띄웁니다.
+    //저장 여부를 알리고 페이지 이동 의사를 묻는 알림창
     swal({
       title: "장바구니에 잘 담겼어요!",
       icon: "success",
@@ -92,7 +96,7 @@ const Detail = (props) => {
   };
   return (
     <React.Fragment>
-      {prd && (
+      {prd && ( //상품정보 존재 시 화면 렌더링
         <Grid padding="60px 0 0 0" max_width="950px" margin="0 auto">
           <div style={{ alignItems: "flex-start", display: "flex" }}>
             <Image height="406px" src={prd.prd_img} />
@@ -203,7 +207,7 @@ const Detail = (props) => {
                 </Select>
               </Grid>
 
-              {options &&
+              {options && //선택한 옵션이 존재할 때 화면 렌더링
                 options.map((option, idx) => {
                   return (
                     <Grid padding="16px" key={idx}>
@@ -324,6 +328,7 @@ const Detail = (props) => {
     </React.Fragment>
   );
 };
+//주어진 props가 없을 때 보여지는 기본 값
 Detail.defaultProps = {
   option: [
     "매콤달콤 양념 치킨(2~3인분) 15,400원",

@@ -13,7 +13,7 @@ const Login = (props) => {
   const [pwd, setPwd] = React.useState("");
 
   const login = () => {
-
+//입력 값 정합성 체크 후 login API 요청
     if (id === "" || pwd === "") {
       window.alert("아이디와 비밀번호를 입력해주세요.");
       return;

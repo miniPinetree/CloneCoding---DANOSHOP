@@ -1,3 +1,5 @@
+//토큰관련 쿠키 저장/삭제 함수 
+
 const getCookie = (name) =>{
     let value = "; "+document.cookie;
     let parts = value.split(`; ${name}=`);

@@ -52,7 +52,8 @@ const Cart = (props) => {
               <th>수량</th>
               <th>주문금액</th>
             </tr>
-            {cart_list.map((cart) => {
+            
+            {cart_list.map((cart) => { //로컬스토리지에 저장된 장바구니 존재 시 렌더링
               return (
                 <tr>
                   <td>
@@ -134,7 +135,7 @@ const Cart = (props) => {
             </tr>
           </Table>
         </React.Fragment>
-      ) : (
+      ) : ( //로컬스토리지에 장바구니 정보가 없을 때
         <Grid padding="100px 0" center>
           <Text size="14px">장바구니에 담긴 상품이 없습니다.</Text>
         </Grid>
@@ -150,7 +151,7 @@ const Cart = (props) => {
           추천상품 보러가기
         </Btn>
         <Btn
-          onClick={() => {
+          onClick={() => {//로컬스토리지 정보를 삭제하고 새로고침
             localStorage.removeItem("cart");
             window.location.reload();
           }}

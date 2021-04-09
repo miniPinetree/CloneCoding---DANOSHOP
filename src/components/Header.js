@@ -12,7 +12,7 @@ const Header = (props) => {
   const user_info = useSelector((state) => state.user.user);
   const is_login = getCookie("is_login");
 
-  if (
+  if ( //로그인, 회원가입 화면에서는 헤더를 보여주지 않음.
     window.location.pathname === "/login" ||
     window.location.pathname === "/signup"
   )

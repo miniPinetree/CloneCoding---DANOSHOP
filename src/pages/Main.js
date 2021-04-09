@@ -33,9 +33,9 @@ const Main = (props) => {
         <Grid margin="25px 0 0 0">
           <Grid width="1140px" margin="auto" is_flex wrap>
             {prd_list.map((p, idx) => {
-              if (idx !== 4) {
+              if (idx !== 4) {//상품 포스트 하나하나 렌더링
                 return <Product {...p} key={p._id} idx={idx} />;
-              } else {
+              } else {//idx가 4인 경우 전체보기 소제목 추가
                 return (
                   <React.Fragment>
                     <Grid margin="10px 0" width="100%">

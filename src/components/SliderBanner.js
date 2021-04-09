@@ -13,6 +13,7 @@ import img6 from "./images/img6.png";
 import img7 from "./images/img7.png";
 import img8 from "./images/img8.png";
 
+//라이브러리 이벤트 속성과 디자인 요소 스타일링
 const SliderBanner = (props) => {
   const settings = {
     dots: true,
@@ -25,7 +26,7 @@ const SliderBanner = (props) => {
     autoplaySpeed: 2000,
     pauseOnHover: true,
   };
-
+//사용할 이미지를 Slider 태그 안에 위치 시킴
   return (
     <Grid margin="0 0 30px 0">
       <Slider {...settings}>
