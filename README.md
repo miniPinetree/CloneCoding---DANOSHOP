@@ -3,6 +3,7 @@
 #### Front-end 1인/Back-end 1인
 
 ![클론 썸네일](https://user-images.githubusercontent.com/68773118/114116328-73287800-991f-11eb-82b0-6b59dc887203.png)
+#### 시현영상 [Youtube](https://youtu.be/8M8cc51CJL8)
 
 리액트를 이용한 첫 팀 프로젝트를 진행했습니다.
 
@@ -24,5 +25,4 @@ React, Node.js
 - 로그인/회원가입이 가능합니다.
 - 상품 리스트를 사이트에서 직접 크롤링해 와 DB에 저장한 뒤 axios를 이용한 API 요청에 따라 화면에 보여주고 있습니다.
 
-## 시현영상
-[Youtube](https://youtu.be/8M8cc51CJL8)
+
