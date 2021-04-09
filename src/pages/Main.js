@@ -12,8 +12,12 @@ const Main = (props) => {
   const dispatch = useDispatch();
   const prd_list = useSelector((state) => state.prd.list);
 
+
+ 
   React.useEffect(() => {
+      //메인페이지는 상품 리스트를 DB에서 받아와 리덕스에 저장한 뒤 화면에 표시
     dispatch(prdActions.getPostDB());
+     //쿠키에 저장된 액세스 토큰이 존재한다면 서버에 요청을 보내 유저 정보를 받음
     if(getCookie("is_login")){
       dispatch(userActions.loginCheckDB());
     }

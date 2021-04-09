@@ -79,7 +79,7 @@ const initialState = {
 
 
   };
-
+//상품 리스트를 DB로부터 받아오는 API통신
 const getPostDB = () =>{
     return function (dispatch, getState, {history}){
 

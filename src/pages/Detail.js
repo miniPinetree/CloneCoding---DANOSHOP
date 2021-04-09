@@ -7,6 +7,7 @@ import DetailNav from "../components/DetailNav";
 import swal from "sweetalert";
 import { history } from "../redux/configStore";
 
+//상품 디테일 페이지에서 옵션을 선택하여 장바구니에 담을 수 있습니다.
 const Detail = (props) => {
   const id = props.match.params.id;
   const dispatch = useDispatch();
@@ -64,20 +65,16 @@ const Detail = (props) => {
     }
   };
 
+  //장바구니 담기 시 로컬 스토리지에 정보를 저장합니다.
   const setLocalStorage = () => {
     const _cart = localStorage.getItem("cart");
-    console.log(options);
-    console.log(...options);
-    console.log(_cart);
     if (_cart) {
       const parseCart = JSON.parse(_cart);
-      console.log(_cart);
-      console.log(parseCart);
       localStorage.setItem("cart", JSON.stringify([...parseCart, ...options]));
     } else {
-      console.log("저장시도");
       localStorage.setItem("cart", JSON.stringify(options));
     }
+    //저장 여부를 알리고 페이지 이동 의사를 묻는 알림을 띄웁니다.
     swal({
       title: "장바구니에 잘 담겼어요!",
       icon: "success",
