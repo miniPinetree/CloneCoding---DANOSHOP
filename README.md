@@ -27,7 +27,8 @@ React, Node.js
 -  [옵션 선택 시 인터랙티브 반응 구현, 로컬스토리지 장바구니 저장](https://velog.io/@mygomi/React-%EC%87%BC%ED%95%91%EB%AA%B0-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9-3.-%EA%B5%AC%ED%98%84-%EA%B8%B0%EB%8A%A5%EA%B8%B0%EB%8A%A5%EB%A1%9C%EC%A7%81-%EB%8D%B0%EC%9D%B4%ED%84%B0)
 - 
 - [Carousel(슬라이드 배너), 동적 이미지와 선택지가 담긴 alert](https://velog.io/@mygomi/React-%EC%87%BC%ED%95%91%EB%AA%B0-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9-2.-%EA%B5%AC%ED%98%84-%EA%B8%B0%EB%8A%A5%EB%94%94%EC%9E%90%EC%9D%B8)
-- https://media.vlpt.us/images/mygomi/post/d3065662-d501-422d-8fc4-00c9509b0f12/ezgif.com-gif-maker%20(7).gif
+![image](https://user-images.githubusercontent.com/68773118/115059995-45948d80-9f22-11eb-85ab-1398afe21f5c.png)
+
 
 ## 과정
 #### 협업환경 구축
