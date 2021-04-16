@@ -24,9 +24,10 @@ React, Node.js
 서버를 거치지 않고 로컬스토리지에 저장하는 방식입니다.
 - 로그인/회원가입이 가능합니다.
 - 상품 리스트를 사이트에서 직접 크롤링해 와 DB에 저장한 뒤 axios를 이용한 API 요청에 따라 화면에 보여주고 있습니다.
--  [옵션 선택 시 인터랙티브 반응 구현](https://velog.io/@mygomi/React-%EC%87%BC%ED%95%91%EB%AA%B0-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9-3.-%EA%B5%AC%ED%98%84-%EA%B8%B0%EB%8A%A5%EA%B8%B0%EB%8A%A5%EB%A1%9C%EC%A7%81-%EB%8D%B0%EC%9D%B4%ED%84%B0)
-- 로컬스토리지 장바구니 저장
-- Carousel(슬라이드 배너), 동적 이미지와 선택지가 담긴 alert
+-  [옵션 선택 시 인터랙티브 반응 구현, 로컬스토리지 장바구니 저장](https://velog.io/@mygomi/React-%EC%87%BC%ED%95%91%EB%AA%B0-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9-3.-%EA%B5%AC%ED%98%84-%EA%B8%B0%EB%8A%A5%EA%B8%B0%EB%8A%A5%EB%A1%9C%EC%A7%81-%EB%8D%B0%EC%9D%B4%ED%84%B0)
+- 
+- [Carousel(슬라이드 배너), 동적 이미지와 선택지가 담긴 alert](https://velog.io/@mygomi/React-%EC%87%BC%ED%95%91%EB%AA%B0-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9-2.-%EA%B5%AC%ED%98%84-%EA%B8%B0%EB%8A%A5%EB%94%94%EC%9E%90%EC%9D%B8)
+- https://media.vlpt.us/images/mygomi/post/d3065662-d501-422d-8fc4-00c9509b0f12/ezgif.com-gif-maker%20(7).gif
 
 ## 과정
 #### 협업환경 구축
