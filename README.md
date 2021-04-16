@@ -2,7 +2,7 @@
 #### (2021.04.02 ~ 2021.04.08)
 #### Front-end 1인/Back-end 1인
 
-![클론 썸네일](https://user-images.githubusercontent.com/68773118/114116328-73287800-991f-11eb-82b0-6b59dc887203.png)
+![image](https://user-images.githubusercontent.com/68773118/115060388-c489c600-9f22-11eb-8b1d-d88cc5d25ad1.png)
 #### 시현영상 [Youtube](https://youtu.be/8M8cc51CJL8)
 
 리액트를 이용한 첫 팀 프로젝트를 진행했습니다.
@@ -19,16 +19,19 @@
 ## 🛠 Tools
 React, Node.js
 
-## 🕹 기능정보
-- 상세페이지 상품 추가 로직과 장바구니에 공을 들였습니다.
-서버를 거치지 않고 로컬스토리지에 저장하는 방식입니다.
-- 로그인/회원가입이 가능합니다.
-- 상품 리스트를 사이트에서 직접 크롤링해 와 DB에 저장한 뒤 axios를 이용한 API 요청에 따라 화면에 보여주고 있습니다.
--  [옵션 선택 시 인터랙티브 반응 구현, 로컬스토리지 장바구니 저장](https://velog.io/@mygomi/React-%EC%87%BC%ED%95%91%EB%AA%B0-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9-3.-%EA%B5%AC%ED%98%84-%EA%B8%B0%EB%8A%A5%EA%B8%B0%EB%8A%A5%EB%A1%9C%EC%A7%81-%EB%8D%B0%EC%9D%B4%ED%84%B0)
-- 
-- [Carousel(슬라이드 배너), 동적 이미지와 선택지가 담긴 alert](https://velog.io/@mygomi/React-%EC%87%BC%ED%95%91%EB%AA%B0-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9-2.-%EA%B5%AC%ED%98%84-%EA%B8%B0%EB%8A%A5%EB%94%94%EC%9E%90%EC%9D%B8)
-![image](https://user-images.githubusercontent.com/68773118/115059995-45948d80-9f22-11eb-85ab-1398afe21f5c.png)
+## 🕹 기능정보 (기능별 포스팅 링크로 이동합니다.)
+#### [Carousel(슬라이드 배너), 동적 이미지와 선택지가 담긴 alert](https://velog.io/@mygomi/React-%EC%87%BC%ED%95%91%EB%AA%B0-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9-2.-%EA%B5%AC%ED%98%84-%EA%B8%B0%EB%8A%A5%EB%94%94%EC%9E%90%EC%9D%B8)
+![ezgif com-gif-maker (7)](https://user-images.githubusercontent.com/68773118/115060060-5ba24e00-9f22-11eb-970f-071c75ddba67.gif)
 
+#### [회원가입, 로그인 유지 구현 (axios로 API 통신)](https://velog.io/@mygomi/React-%EC%87%BC%ED%95%91%EB%AA%B0-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9-4.-axios%EB%A1%9C-API-%ED%86%B5%EC%8B%A0%ED%95%98%EA%B8%B0-%EB%A1%9C%EA%B7%B8%EC%9D%B8-%EB%A9%94%EC%9D%B8-%EC%83%81%EC%84%B8%ED%8E%98%EC%9D%B4%EC%A7%80)
+- ![image](https://user-images.githubusercontent.com/68773118/115060153-7ffe2a80-9f22-11eb-9d58-fef5deefcf97.png)
+
+#### [옵션 선택 시 인터랙티브 반응 구현, 로컬스토리지 장바구니 저장](https://velog.io/@mygomi/React-%EC%87%BC%ED%95%91%EB%AA%B0-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9-3.-%EA%B5%AC%ED%98%84-%EA%B8%B0%EB%8A%A5%EA%B8%B0%EB%8A%A5%EB%A1%9C%EC%A7%81-%EB%8D%B0%EC%9D%B4%ED%84%B0)
+![ezgif com-gif-maker (8)](https://user-images.githubusercontent.com/68773118/115060264-a0c68000-9f22-11eb-8c3d-c009883847c3.gif)
+
+#### [전체 상품 목록 및 상세페이지(API, Dynamic route URL)](https://velog.io/@mygomi/React-%EC%87%BC%ED%95%91%EB%AA%B0-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9-5.-%EC%A0%84%EC%B2%B4-%EC%83%81%ED%92%88%EA%B3%BC-%EC%83%81%EC%84%B8%ED%8E%98%EC%9D%B4%EC%A7%80API-%EB%8F%99%EC%A0%81-%EB%9D%BC%EC%9A%B0%ED%8C%85)
+
+---
 
 ## 과정
 #### 협업환경 구축
