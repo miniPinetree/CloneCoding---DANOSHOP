@@ -2,8 +2,6 @@
 #### (2021.04.02 ~ 2021.04.08)
 #### Front-end 1인/Back-end 1인
 
-<img src="https://media.vlpt.us/images/mygomi/post/0326d09f-b4b6-4af0-8c61-68f96b5af48e/3.png", width="600px">
-
 ![image](https://user-images.githubusercontent.com/68773118/115060388-c489c600-9f22-11eb-8b1d-d88cc5d25ad1.png)
 #### 시현영상 [Youtube](https://youtu.be/8M8cc51CJL8)
 
@@ -26,8 +24,6 @@ React, Node.js
 ![ezgif com-gif-maker (7)](https://user-images.githubusercontent.com/68773118/115060060-5ba24e00-9f22-11eb-970f-071c75ddba67.gif)
 
 #### [회원가입, 로그인 유지 구현 (axios로 API 통신)](https://velog.io/@mygomi/React-%EC%87%BC%ED%95%91%EB%AA%B0-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9-4.-axios%EB%A1%9C-API-%ED%86%B5%EC%8B%A0%ED%95%98%EA%B8%B0-%EB%A1%9C%EA%B7%B8%EC%9D%B8-%EB%A9%94%EC%9D%B8-%EC%83%81%EC%84%B8%ED%8E%98%EC%9D%B4%EC%A7%80)
-
-<img src="https://media.vlpt.us/images/mygomi/post/9baa033e-afef-46e5-b6dd-1088c3ce17cf/4.png", width="600px">
 
 - ![image](https://user-images.githubusercontent.com/68773118/115060153-7ffe2a80-9f22-11eb-9d58-fef5deefcf97.png)
 
