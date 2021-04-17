@@ -1,6 +1,6 @@
 # DANOSHOP 클론코딩 
 
-![ezgif com-gif-maker (7)](https://user-images.githubusercontent.com/68773118/115060060-5ba24e00-9f22-11eb-970f-071c75ddba67.gif)
+![ezgif com-gif-maker (8)](https://user-images.githubusercontent.com/68773118/115060264-a0c68000-9f22-11eb-8c3d-c009883847c3.gif)
 
 ### 목차
 [1. 프로젝트 설명 ](#프로젝트-설명)<br/>
