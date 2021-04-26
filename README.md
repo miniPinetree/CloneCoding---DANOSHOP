@@ -23,7 +23,14 @@ Front-end 1인/Back-end 1인
 평소 관심있던 건강한 식단 전문 쇼핑몰인 다노샵을 클론코딩했습니다. 
 
 ## 🛠 Tools
-React, Node.js
+```
+- View (React with JavaScript, React-Router, material-UI, Styled-components)
+- State Management (Redux, Redux-Thunk, Immer, Redux-actions)
+- Build Tool (Create React App)
+- Code Quality Tool (ESLint, Prettier)
+- Infrastructure (AWS S3, Route 53)
+- Other Tools (Git, Github, notion, Slack, Figma, Google Docs)
+```
 
 <br/>
 
