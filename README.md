@@ -16,7 +16,7 @@
 Front-end 1인/Back-end 1인
 
 ![image](https://user-images.githubusercontent.com/68773118/115060388-c489c600-9f22-11eb-8b1d-d88cc5d25ad1.png)
-### 시현영상 [Youtube](https://youtu.be/8M8cc51CJL8)
+### 시연영상 [Youtube](https://youtu.be/8M8cc51CJL8)
 
 리액트를 이용한 첫 팀 프로젝트를 진행했습니다.
 
